@@ -32,14 +32,14 @@ EOF
             steps {
                 // Remove only the CI container, not production (Part-I)
                 sh '''
-                    docker rm -f ecommerce-app-ci || true
+                    docker rm -f ecommerce-app || true
                 '''
             }
         }
 
         stage('Build & Run CI Container') {
             steps {
-                sh 'docker-compose -p ecommerce_pipeline -f docker-compose.ci.yml up -d --build'
+                sh 'docker-compose -p ecommerce_pipeline -f docker-compose.yml up -d --build'
             }
         }
     }

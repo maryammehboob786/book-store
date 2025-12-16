@@ -12,12 +12,12 @@
                 <p class="user-message user-message--error"><%= errorMessage %></p>
             <% } %>
             <div class="form-control">
-                <label for="title">Title</label>
+                <label for="title">Book Title</label>
                 <input class="<%= validationErrors.find(err=> err.path ==='title') ? 'invalid' :'' %>"
-                type="text" name="title" id="title" value="<% if (editing || hasError) { %><%= product.title %><% }%>">
+                type="text" name="title" id="title" placeholder="Enter book title" value="<% if (editing || hasError) { %><%= product.title %><% }%>">
             </div>
             <div class="form-control">
-                <label for="image">Image</label>
+                <label for="image">Book Cover</label>
                 <input type="file" name="image" id="image">
             </div>
             <!-- <div class="form-control">
@@ -31,9 +31,9 @@
                  type="number" name="price" id="price" step="0.01" value="<% if (editing || hasError) { %><%= product.price %><% } %>">
             </div>
             <div class="form-control">
-                <label for="description">Description</label>
+                <label for="description">Book Description / Synopsis</label>
                 <textarea class="<%= validationErrors.find(err=> err.path ==='description') ? 'invalid' :'' %>" 
-                name="description" id="description" rows="5"><% if (editing || hasError) { %><%= product.description %><% } %></textarea>
+                name="description" id="description" rows="5" placeholder="Enter book description, author, genre, etc."><% if (editing || hasError) { %><%= product.description %><% } %></textarea>
             </div>
             <% if (editing) { %>
                 <input type="hidden" value="<%= product._id %>" name="productId">
@@ -41,7 +41,7 @@
             
             <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
 
-            <button class="btn" type="submit"><% if (editing) { %>Update Product<% } else { %>Add Product<% } %></button>
+            <button class="btn" type="submit"><% if (editing) { %>Update Book<% } else { %>Add Book<% } %></button>
         </form>
     </main>
 <%- include('../includes/end.ejs') %>

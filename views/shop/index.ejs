@@ -9,15 +9,15 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Welcome to GameZone</h1>
-            <p>Your one-stop shop for the latest gaming gear!</p>
-            <a href="#products" class="btn btn-primary">Shop Now</a>
+            <h1>Welcome to BookHaven</h1>
+            <p>Discover your next favorite book!</p>
+            <a href="#products" class="btn btn-primary">Browse Books</a>
         </div>
     </section>
 
     <main>
         <% if (prods.length > 0) { %>
-            <h2 id="products" class="section-title">Featured Products</h2>
+            <h2 id="products" class="section-title">Featured Books</h2>
             <div class="grid">
                 <% for (let product of prods) { %>
                     <article class="card product-item">
@@ -50,7 +50,7 @@
                 <% } %>
             </section>
         <% } else { %>
-            <h2>No Products Found!</h2>
+            <h2>No Books Found!</h2>
         <% } %>
     </main>
     <%- include('../includes/footer.ejs') %>

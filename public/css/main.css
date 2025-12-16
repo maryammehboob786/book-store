@@ -34,7 +34,7 @@ form {
 .main-header {
   width: 100%;
   height: 6rem;
-  background-color: #00695c;
+  background-color: #5D4037;
   padding: 0 1.5rem;
   display: flex;
   align-items: center;
@@ -61,6 +61,12 @@ form {
   padding: 0;
 }
 
+.main-header__item.logo a {
+  font-weight: bold;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
 .main-header__item a {
   text-decoration: none;
   color: white;
@@ -68,7 +74,7 @@ form {
 }
 #logOutbtn {
   color: white;
-  background-color: #00695c;
+  background-color: #5D4037;
   border: none;
   font: inherit;
   cursor: pointer;
@@ -78,7 +84,7 @@ form {
 .main-header__item a:hover,
 .main-header__item a:active,
 .main-header__item a.active {
-  color: #ffeb3b;
+  color: #FFD54F;
 }
 .user-message {
   border: 1px solid blue;
@@ -126,6 +132,12 @@ form {
   padding: 0;
 }
 
+.mobile-nav__item.logo-mobile a {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #5D4037;
+}
+
 .mobile-nav__item a {
   text-decoration: none;
   color: black;
@@ -136,7 +148,7 @@ form {
 .mobile-nav__item a:active,
 .mobile-nav__item a:hover,
 .mobile-nav__item a.active {
-  background: #00695c;
+  background: #5D4037;
   color: white;
   border-radius: 3px;
 }
@@ -157,8 +169,8 @@ form {
 
 #side-menu-toggle:active,
 #side-menu-toggle:hover {
-  color: #ffeb3b;
-  border-color: #ffeb3b;
+  color: #FFD54F;
+  border-color: #FFD54F;
 }
 
 .backdrop {
@@ -220,8 +232,8 @@ form {
   padding: 0.25rem 1rem;
   text-decoration: none;
   font: inherit;
-  border: 1px solid #00695c;
-  color: #00695c;
+  border: 1px solid #5D4037;
+  color: #5D4037;
   background: white;
   border-radius: 3px;
   cursor: pointer;
@@ -229,7 +241,7 @@ form {
 
 .btn:hover,
 .btn:active {
-  background-color: #00695c;
+  background-color: #5D4037;
   color: white;
 }
 
@@ -249,14 +261,14 @@ form {
 }
 .pagination a {
   text-decoration: none;
-  color: #00695c;
+  color: #5D4037;
   padding: 0.5rem;
-  border: 1px solid #00695c;
+  border: 1px solid #5D4037;
   margin: 0 0.5rem;
 }
 .pagination a:hover,
 .pagination a:active {
-  background-color: #00695c;
+  background-color: #5D4037;
   color: white;
 }
 
